@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --btn-height: 55px;
+    --white: #fff;
+    --blue: #03071e;
+    --red: #370617;
+    --black: #090d0e;
+    --brown: #c2884f;
+    --green: #298a81;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+.yeseva{
+    font-family: 'Yeseva One', serif;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgb(24, 11, 0), rgba(0,0,0,0)), url('./assets/bg/Kahve.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    height: 100vh;
+    background-image: url('./assets/bg/CoffeBg04.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* FEATURED MENU SECTION */
+
+.featured-menu{
+    height: fit-content;
+    background: url('./assets/bg/CoffeBg03.jpg') fixed;
+    padding: 20px 0;
+}
+
+/* 3D BUTTON */
+
+.Button {
+    height: var(--btn-height);
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    min-width: 155px;
+    perspective: 160px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.Button-cube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform .3s ease-in-out;
+    transform: translateZ(calc(-1 * var(--btn-height) / 2));
+}
+
+.Button-cube span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: var(--white);
+    background: var(--brown);
+    font-weight: 200;
+}
+
+.Button-cube span:nth-child(1) {
+    transform: rotateX(0deg) translateZ(calc(var(--btn-height) / 2));
+}
+
+.Button-cube span:nth-child(2) {
+    transform: rotateX(-90deg) translateZ(calc(var(--btn-height) / 2));
+    background: var(--green);
+    color: var(--white);
+}
+
+.Button:hover .Button-cube {
+    transform: translateZ(calc(-1 * var(--btn-height) /2)) rotateX(90deg);
+}
+
+/* Navbar Links */
+.navlink{
+    color: var(--white);
+    transition: .3s;
+}
+.navlink:hover{
+    color: #dfdfdf;
+}
+.navlink-active{
+    color: #dfdfdf;
+}
