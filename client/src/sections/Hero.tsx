@@ -18,7 +18,7 @@ export default function Hero({
       <Navbar />
       <div className="texts-container container mx-auto text-center h-1/2 justify-center flex flex-col space-y-7 mt-10">
         <h1
-          className="font-yeseva text-[#fff] text-9xl self-center w-2/3"
+          className="font-yeseva text-[#fff] text-6xl md:text-8xl self-center w-2/3"
           data-aos="fade-up"
         >
           {title}

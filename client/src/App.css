@@ -65,7 +65,7 @@
 /* LOCATION SECTION*/
 
 .location{
-    height: 100vh;
+    height: fit-content;
     background: url('./assets/bg/CoffeBg06.jpg') fixed no-repeat;
     background-size: cover;
     background-position: center;

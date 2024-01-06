@@ -67,24 +67,30 @@ const Drinks = [
 
 export default function FeaturedMenu() {
   return (
-    <div className="featured-menu">
-      <div className="container flex flex-col mx-auto items-center">
-        <h1 className="font-yeseva text-g-brown text-8xl" data-aos="fade-up">
+    <div className="featured-menu py-40 md:py-20">
+      <div className="container flex flex-col mx-auto items-center space-y-11 w-10/12 md:w-full">
+        <h1
+          className="font-yeseva text-g-brown text-6xl md:text-8xl"
+          data-aos="fade-up"
+        >
           Featured Menu
         </h1>
-        <h1 className="font-yeseva text-g-brown text-2xl" data-aos="fade-up">
+        <h1
+          className="font-yeseva text-g-brown text-xl text-center md:text-left md:text-2xl"
+          data-aos="fade-up"
+        >
           Awaken Your Senses with a Perfect Blend of Coffee and Sweet
           Temptations
         </h1>
         <div className="menu-container mt-20 space-y-16">
-          <section className="category-section h-1/4">
+          <section className="category-section h-1/4 flex flex-col items-center justify-center md:items-start md:justify-start">
             <h1
               className="font-yeseva text-g-brown text-4xl"
               data-aos="fade-up"
             >
               Desserts
             </h1>
-            <div className="category-posts continer mx-auto flex flex-wrap mt-10 space-x-16">
+            <div className="category-posts flex flex-col md:flex-row items-center justify-center mt-10 space-x-0 md:space-x-16 w-10/12 md:w-full space-y-16 md:space-y-0">
               {Desserts.map((dessert) => (
                 <DessertsPost
                   img={dessert.img}
@@ -95,14 +101,14 @@ export default function FeaturedMenu() {
             </div>
           </section>
 
-          <section className="category-section h-1/4">
+          <section className="category-section h-1/4 flex flex-col items-center justify-center md:items-start md:justify-start">
             <h1
               className="font-yeseva text-g-brown text-4xl"
               data-aos="fade-up"
             >
               Drinks
             </h1>
-            <div className="category-posts continer mx-auto flex flex-wrap mt-10 space-x-16">
+            <div className="category-posts flex flex-col md:flex-row items-center justify-center mt-10 space-x-0 md:space-x-16 w-10/12 md:w-full space-y-16 md:space-y-0">
               {Drinks.map((drink) => (
                 <DrinksPost
                   img={drink.img}

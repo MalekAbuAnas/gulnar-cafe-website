@@ -42,14 +42,17 @@ export default function Reviews() {
 
   return (
     <div className="reviews">
-      <div className="title-container container mx-auto text-center">
+      <div className="title-container flex flex-col px-5 md:px-0 w-full items-center justify-center text-center space-y-6">
         <h1
-          className="font-yeseva text-[#fff] text-8xl pt-20"
+          className="font-yeseva text-[#fff] pt-20 text-6xl md:text-8xl"
           data-aos="fade-up"
         >
           Reviews
         </h1>
-        <h1 className="font-yeseva text-2xl text-[#fff]" data-aos="fade-up">
+        <h1
+          className="font-yeseva text-lg md:text-2xl text-[#fff]"
+          data-aos="fade-up"
+        >
           Our average customer rating is 4.8 / 5​
         </h1>
       </div>
@@ -66,7 +69,7 @@ export default function Reviews() {
             </h1>
           </a>
         </div>
-        <p className="text-xl text-[#fff] self-center text-center w-2/3">
+        <p className="text-lg md:text-xl text-[#fff] self-center text-center w-2/3">
           {comments[currentIndex].comment}
         </p>
         <button

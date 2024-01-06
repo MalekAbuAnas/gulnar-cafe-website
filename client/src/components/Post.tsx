@@ -8,7 +8,7 @@ type Props = {
 export default function Post({ img, name, key, price }: Props) {
   return (
     <div
-      className="post w-1/5 h-fit pb-8 bg-[#fff] shadow-2xl rounded-lg duration-500 hover:translate-y-[-25px] cursor-pointer"
+      className="post w-10/12 md:w-1/5 h-fit pb-8 bg-[#fff] shadow-2xl rounded-lg duration-500 hover:translate-y-[-25px] cursor-pointer"
       data-aos="flip-up"
     >
       <img

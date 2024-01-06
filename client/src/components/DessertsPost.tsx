@@ -7,7 +7,7 @@ type Props = {
 export default function DessertsPost({ img, title, description }: Props) {
   return (
     <div
-      className="post w-[300px] justify-center items-center flex flex-col text-center space-y-7"
+      className="post w-[300px] justify-center items-center flex flex-col text-center space-y-7 self-center"
       data-aos="fade-up"
     >
       <img src={img} alt="Image" width="267px" />

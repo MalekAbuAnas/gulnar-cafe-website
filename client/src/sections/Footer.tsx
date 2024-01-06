@@ -2,7 +2,7 @@ import { Logo } from "../assets";
 
 export default function Footer() {
   return (
-    <footer className="w-9/12 flex justify-center">
+    <footer className="w-9/12 hidden md:flex justify-center">
       <div className="flex py-10 space-x-32">
         <div className="w-1/4 h-[70px]">
           <img src={Logo} alt="Logo" width="200px" />
