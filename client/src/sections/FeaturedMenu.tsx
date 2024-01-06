@@ -101,6 +101,14 @@ export default function FeaturedMenu() {
                 </div>
               ))}
             </div>
+            <div className="call-to-action w-full flex justify-center mt-10">
+              <button className="Button mt-6">
+                <div className="Button-cube">
+                  <span>View Full Menu</span>
+                  <span>Let's Go</span>
+                </div>
+              </button>
+            </div>
           </section>
         </div>
       </div>

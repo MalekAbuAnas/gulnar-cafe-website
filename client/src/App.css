@@ -49,7 +49,34 @@
 .featured-menu{
     height: fit-content;
     background: url('./assets/bg/CoffeBg03.jpg') fixed;
-    padding: 20px 0;
+    padding: 40px 0;
+}
+
+/* REVIEWS SECTION */
+
+.reviews{
+    height: 75vh;
+    background: linear-gradient(0deg, rgba(0,0,0,.7), rgba(0,0,0,.7)), url('./assets/bg/CoffeeCup.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* LOCATION SECTION*/
+
+.location{
+    height: 100vh;
+    background: url('./assets/bg/CoffeBg06.jpg') fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* BY FOR HOME SECTION */
+
+.by-for-home{
+    background: linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/bg/CoffeeCup03.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* 3D BUTTON */
