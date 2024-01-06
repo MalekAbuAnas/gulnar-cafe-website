@@ -2,12 +2,21 @@ import {
   About,
   ByForHome,
   FeaturedMenu,
+  Footer,
   Hero,
   Location,
+  PoweredBy,
   Reviews,
 } from "../sections/index";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <Hero
@@ -21,6 +30,10 @@ export default function Home() {
       <Reviews />
       <Location />
       <ByForHome />
+      <Footer />
+      <br />
+      <br />
+      <PoweredBy />
     </>
   );
 }

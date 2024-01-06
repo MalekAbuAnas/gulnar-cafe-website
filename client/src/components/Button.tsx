@@ -11,7 +11,7 @@ type Props = {
 export default function Button({ first_text, second_text, link }: Props) {
   return (
     <Link target="_blank" to={link}>
-      <button className="Button mt-6 z-50">
+      <button className="Button mt-6 z-50" data-aos="fade-up">
         <div className="Button-cube">
           <span>{first_text}</span>
           <span>{second_text}</span>

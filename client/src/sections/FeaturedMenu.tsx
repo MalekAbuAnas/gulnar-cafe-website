@@ -8,6 +8,8 @@ import {
   Juice03,
   Juice04,
 } from "../assets/index";
+import { Button, DessertsPost, DrinksPost } from "../components";
+
 // import Desserts from "../data/Desserts.json";
 //import Drinks from "../data/Drinks.json";
 
@@ -67,47 +69,54 @@ export default function FeaturedMenu() {
   return (
     <div className="featured-menu">
       <div className="container flex flex-col mx-auto items-center">
-        <h1 className="font-yeseva text-g-brown text-8xl">Featured Menu</h1>
-        <h1 className="font-yeseva text-g-brown text-2xl">
+        <h1 className="font-yeseva text-g-brown text-8xl" data-aos="fade-up">
+          Featured Menu
+        </h1>
+        <h1 className="font-yeseva text-g-brown text-2xl" data-aos="fade-up">
           Awaken Your Senses with a Perfect Blend of Coffee and Sweet
           Temptations
         </h1>
         <div className="menu-container mt-20 space-y-16">
           <section className="category-section h-1/4">
-            <h1 className="font-yeseva text-g-brown text-4xl">Desserts</h1>
+            <h1
+              className="font-yeseva text-g-brown text-4xl"
+              data-aos="fade-up"
+            >
+              Desserts
+            </h1>
             <div className="category-posts continer mx-auto flex flex-wrap mt-10 space-x-16">
               {Desserts.map((dessert) => (
-                <div className="post w-[300px] justify-center items-center flex flex-col text-center space-y-7">
-                  <img src={dessert.img} alt="Image" width="267px" />
-                  <h1 className="font-yeseva text-g-brown text-2xl">
-                    {dessert.title}
-                  </h1>
-                  <p>{dessert.description}</p>
-                </div>
+                <DessertsPost
+                  img={dessert.img}
+                  title={dessert.title}
+                  description={dessert.description}
+                ></DessertsPost>
               ))}
             </div>
           </section>
 
           <section className="category-section h-1/4">
-            <h1 className="font-yeseva text-g-brown text-4xl">Drinks</h1>
+            <h1
+              className="font-yeseva text-g-brown text-4xl"
+              data-aos="fade-up"
+            >
+              Drinks
+            </h1>
             <div className="category-posts continer mx-auto flex flex-wrap mt-10 space-x-16">
               {Drinks.map((drink) => (
-                <div className="post w-[300px] justify-center items-center flex flex-col text-center space-y-7">
-                  <img src={drink.img} alt="Image" width="150px" />
-                  <h1 className="font-yeseva text-g-brown text-2xl">
-                    {drink.title}
-                  </h1>
-                  <p>{drink.description}</p>
-                </div>
+                <DrinksPost
+                  img={drink.img}
+                  title={drink.title}
+                  description={drink.description}
+                ></DrinksPost>
               ))}
             </div>
             <div className="call-to-action w-full flex justify-center mt-10">
-              <button className="Button mt-6">
-                <div className="Button-cube">
-                  <span>View Full Menu</span>
-                  <span>Let's Go</span>
-                </div>
-              </button>
+              <Button
+                first_text="View Full Menu"
+                second_text="Let's Go"
+                link={"#"}
+              ></Button>
             </div>
           </section>
         </div>

@@ -43,13 +43,21 @@ export default function Reviews() {
   return (
     <div className="reviews">
       <div className="title-container container mx-auto text-center">
-        <h1 className="font-yeseva text-[#fff] text-8xl pt-20">Reviews</h1>
-        <h1 className="font-yeseva text-2xl text-[#fff]">
+        <h1
+          className="font-yeseva text-[#fff] text-8xl pt-20"
+          data-aos="fade-up"
+        >
+          Reviews
+        </h1>
+        <h1 className="font-yeseva text-2xl text-[#fff]" data-aos="fade-up">
           Our average customer rating is 4.8 / 5​
         </h1>
       </div>
 
-      <div className="slider mx-auto container h-2/3 py-16 px-4 relative text-center items-center justify-center flex flex-col space-y-10">
+      <div
+        className="slider mx-auto container h-2/3 py-16 px-4 relative text-center items-center justify-center flex flex-col space-y-10"
+        data-aos="fade-up"
+      >
         <div className="flex space-x-6 container items-center justify-center textc-center mx-auto">
           <img src={comments[currentIndex].icon} alt="User" />
           <a href={comments[currentIndex].link} target="_blank">
@@ -63,13 +71,13 @@ export default function Reviews() {
         </p>
         <button
           onClick={prevSlide}
-          className="w-12 h-1w-12 absolute top[50%] translate-x-0 translate-y-[-50%] left-5 text-xl rounded-full p-2 bg-[#fff]/40 text-black cursor-pointer"
+          className="w-12 h-12 absolute top[50%] translate-x-0 translate-y-[-50%] left-5 text-xl rounded-full p-2 bg-[#fff] hover:bg-[#c4c4c4] duration-500 text-black cursor-pointer"
         >
           <i className="fa-solid fa-chevron-left"></i>
         </button>
         <button
           onClick={nextSlide}
-          className="w-12 h-1w-12 absolute top[50%] translate-x-0 translate-y-[-50%] right-5 text-xl rounded-full p-2 bg-[#fff]/40 text-black cursor-pointer"
+          className="w-12 h-12 absolute top[50%] translate-x-0 translate-y-[-50%] right-5 text-xl rounded-full p-2 bg-[#fff] hover:bg-[#c4c4c4] duration-500 text-black cursor-pointer"
         >
           <i className="fa-solid fa-chevron-right"></i>
         </button>

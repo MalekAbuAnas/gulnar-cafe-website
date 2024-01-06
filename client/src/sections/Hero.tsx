@@ -17,16 +17,26 @@ export default function Hero({
     <div className="hero">
       <Navbar />
       <div className="texts-container container mx-auto text-center h-1/2 justify-center flex flex-col space-y-7 mt-10">
-        <h1 className="font-yeseva text-[#fff] text-9xl self-center w-2/3">
+        <h1
+          className="font-yeseva text-[#fff] text-9xl self-center w-2/3"
+          data-aos="fade-up"
+        >
           {title}
         </h1>
-        <h2 className="font-yeseva text-[#fff] text-2xl self-center">
+        <h2
+          className="font-yeseva text-[#fff] text-2xl self-center"
+          data-aos="fade-up"
+        >
           {Subtitle}
         </h2>
-        <div className="btns-container container mx-auto items-center flex justify-center">
+        <div
+          className="btns-container container mx-auto items-center flex justify-center"
+          data-aos="fade-up"
+        >
           <Button
             first_text={btn_frst_text}
             second_text={btn_second_text}
+            link="#"
           ></Button>
           {/* <button className="Button mt-6">
             <div className="Button-cube">

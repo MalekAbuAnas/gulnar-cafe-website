@@ -4,18 +4,26 @@ export default function Location() {
   return (
     <div className="location">
       <div className="location-texts-section w-full text-center pt-6 space-y-10">
-        <h1 className="text-g-brown font-yeseva text-8xl">Our Location</h1>
-        <h1 className="text-g-brown font-yeseva text-2xl">
+        <h1 className="text-g-brown font-yeseva text-8xl" data-aos="fade-up">
+          Our Location
+        </h1>
+        <h1 className="text-g-brown font-yeseva text-2xl" data-aos="fade-up">
           We are pleased with your visit
         </h1>
         <div className="flex flex-row boxes-container w-full items-center justify-center space-x-10 pt-10">
-          <div className="box w-1/4 bg-[#fff] shadow-2xl h-[500px] rounded-lg">
+          <div
+            className="box w-1/4 bg-[#fff] shadow-2xl h-[500px] rounded-lg"
+            data-aos="flip-up"
+          >
             <h1 className="font-yeseva text-black text-4xl mt-10 mb-10">
               Sa'ada
             </h1>
             <h3 className="text-xl font-yeseva text-g-brown">Openning Soon</h3>
           </div>
-          <div className="box w-1/4 bg-[#fff] shadow-2xl h-[500px] rounded-lg space-y-10 items-center flex flex-col">
+          <div
+            className="box w-1/4 bg-[#fff] shadow-2xl h-[500px] rounded-lg space-y-10 items-center flex flex-col"
+            data-aos="flip-up"
+          >
             <h1 className="font-yeseva text-black text-4xl mt-10">
               Dragon City
             </h1>
@@ -42,7 +50,10 @@ export default function Location() {
               ></Button>
             </div>
           </div>
-          <div className="box w-1/4 bg-[#fff] shadow-2xl h-[500px] rounded-lg">
+          <div
+            className="box w-1/4 bg-[#fff] shadow-2xl h-[500px] rounded-lg"
+            data-aos="flip-up"
+          >
             <h1 className="font-yeseva text-black text-4xl mt-10 mb-10">
               Marasi Mall
             </h1>
