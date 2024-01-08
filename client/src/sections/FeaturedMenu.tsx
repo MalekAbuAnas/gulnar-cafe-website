@@ -70,7 +70,7 @@ export default function FeaturedMenu() {
     <div className="featured-menu py-40 md:py-20">
       <div className="container flex flex-col mx-auto items-center space-y-11 w-10/12 md:w-full">
         <h1
-          className="font-yeseva text-g-brown text-6xl md:text-8xl"
+          className="font-yeseva text-g-dark-brown text-6xl md:text-8xl"
           data-aos="fade-up"
         >
           Featured Menu
@@ -85,7 +85,7 @@ export default function FeaturedMenu() {
         <div className="menu-container mt-20 space-y-16">
           <section className="category-section h-1/4 flex flex-col items-center justify-center md:items-start md:justify-start">
             <h1
-              className="font-yeseva text-g-brown text-4xl"
+              className="font-yeseva text-g-dark-brown text-4xl"
               data-aos="fade-up"
             >
               Desserts
@@ -103,7 +103,7 @@ export default function FeaturedMenu() {
 
           <section className="category-section h-1/4 flex flex-col items-center justify-center md:items-start md:justify-start">
             <h1
-              className="font-yeseva text-g-brown text-4xl"
+              className="font-yeseva text-g-dark-brown text-4xl"
               data-aos="fade-up"
             >
               Drinks

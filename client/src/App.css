@@ -79,6 +79,32 @@
     background-repeat: no-repeat;
 }
 
+/* PAGES HERO SECTION */
+
+.pages-hero{
+    min-height: 50vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/bg/CoffeeHero.jpg') fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ABOUT CONTENT SECTION */
+
+.about-content-01{
+    height: fit-content;
+    background: url('./assets/bg/CoffeBg07.jpg') fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content-02 {
+    height: fit-content;
+    background: url('./assets/bg/CoffeBg08.jpg') fixed no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* 3D BUTTON */
 
 .Button {

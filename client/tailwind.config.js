@@ -8,6 +8,7 @@ export default {
     extend: {},
     colors: {
       'g-brown': '#c2884f',
+      'g-dark-brown': '#210f04',
       'g-green': '#298a81',
     },
     fontFamily: {

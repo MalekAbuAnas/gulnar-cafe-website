@@ -5,7 +5,7 @@ export default function Location() {
     <div className="location py-10">
       <div className="location-texts-section w-full text-center pt-6 space-y-10">
         <h1
-          className="text-g-brown font-yeseva text-6xl md:text-8xl"
+          className="text-g-dark-brown font-yeseva text-6xl md:text-8xl"
           data-aos="fade-up"
         >
           Our Location

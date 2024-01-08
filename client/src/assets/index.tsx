@@ -1,5 +1,6 @@
 export { default as Logo } from "./Logo.png";
 export { default as Shop } from "./Shop.jpg";
+export { default as CoffeeCup } from "./CoffeCup.jpg";
 
 // Products
 

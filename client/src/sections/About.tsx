@@ -16,7 +16,7 @@ export default function About() {
         </div>
         <div className="w-10/12 flex flex-col md:w-1/2 space-y-6 items-center justify-center md:items-start md:justify-start">
           <h1
-            className="mt-5 w-full font-yeseva text-6xl md:text-8xl text-g-brown text-center md:text-left"
+            className="mt-5 w-full font-yeseva text-6xl md:text-8xl text-g-dark-brown text-center md:text-left"
             data-aos="fade-up"
           >
             About Us
