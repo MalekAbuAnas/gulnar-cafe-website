@@ -27,7 +27,8 @@
 /* HERO SECTION */
 
 .hero{
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     background-image: linear-gradient(0deg, rgb(24, 11, 0), rgba(0,0,0,0)), url('./assets/bg/Kahve.jpg');
     background-size: cover;
     background-repeat: no-repeat;
