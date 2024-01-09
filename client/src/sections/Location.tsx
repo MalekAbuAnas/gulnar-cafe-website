@@ -53,6 +53,7 @@ export default function Location() {
                 second_text={
                   <i className="fa-solid fa-location-dot text-2xl"></i>
                 }
+                fade={true}
               ></Button>
             </div>
           </div>

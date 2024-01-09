@@ -106,6 +106,16 @@
     background-position: center;
 }
 
+/* SERVICES CONTENT SECTION */
+
+.services-content{
+    min-height: 100vh;
+    height: fit-content;
+    background: url('./assets/bg/CoffeBg09.jpg') fixed no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
 /* 3D BUTTON */
 
 .Button {

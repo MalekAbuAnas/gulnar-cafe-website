@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Link } from "react-router-dom";
 import { Logo, MenuIcon, CloseIcon } from "../assets/index";
-import NavMenus from "../data/NavMenus.json";
+//import NavMenus from "../data/NavMenus.json";
 import { useState } from "react";
+import { PhoneMenu } from ".";
 
 export default function Navbar() {
   const [isopen, setIsOpen] = useState(false);
@@ -23,17 +24,21 @@ export default function Navbar() {
             <img src={Logo} alt="Logo" className="logo w-44" />
           </Link>
           <ul className="hidden md:flex space-x-12 text-white">
-            {NavMenus.map((menu, index) => (
-              <li className="text-white">
-                <Link
-                  key={index}
-                  to={menu === "Home" ? "/" : menu}
-                  className="navlink"
-                >
-                  {menu}
-                </Link>
-              </li>
-            ))}
+            <li className="text-[#fff] capitalize">
+              <Link to={"/"}>home</Link>
+            </li>
+            <li className="text-[#fff] capitalize">
+              <Link to={"/about"}>about</Link>
+            </li>
+            <li className="text-[#fff] capitalize">
+              <Link to={"/services"}>Services</Link>
+            </li>
+            <li className="text-[#fff] capitalize">
+              <Link to={"/menu"}>Menu</Link>
+            </li>
+            <li className="text-[#fff] capitalize">
+              <Link to={"/contact"}>Contact US</Link>
+            </li>
           </ul>
           <img
             src={isopen ? CloseIcon : MenuIcon}
@@ -44,25 +49,7 @@ export default function Navbar() {
           />
         </div>
       </div>
-      <div
-        className={`bg-none w-9/12 overflow-hidden duration-500 h-0 ${
-          isopen ? "pb-[200px]" : "pb-0"
-        }`}
-      >
-        <ul className="mx-10 space-y-5">
-          {NavMenus.map((menu, index) => (
-            <li className="text-white">
-              <Link
-                key={index}
-                to={menu === "Home" ? "/" : menu}
-                className="navlink"
-              >
-                {menu}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <PhoneMenu isopen={isopen}></PhoneMenu>
     </>
   );
 }
@@ -81,4 +68,19 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
+
+
+
+
+      {NavMenus.map((menu, index) => (
+              <li className="text-white capitalize">
+                <Link
+                  key={index}
+                  to={menu === "home" ? "/" : menu}
+                  className="navlink"
+                >
+                  {menu}
+                </Link>
+              </li>
+            ))}
  */

@@ -41,6 +41,7 @@ export default function About() {
               <i className="fa-solid fa-arrow-right-long text-2xl"></i>
             }
             link={""}
+            fade={true}
           ></Button>
         </div>
       </div>

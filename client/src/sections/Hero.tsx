@@ -37,6 +37,7 @@ export default function Hero({
             first_text={btn_frst_text}
             second_text={btn_second_text}
             link="#"
+            fade={true}
           ></Button>
           {/* <button className="Button mt-6">
             <div className="Button-cube">

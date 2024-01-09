@@ -8,3 +8,4 @@ export { default as Footer } from "./Footer";
 export { default as PoweredBy } from "./Poweredby";
 export { default as PagesHero } from "./PagesHero";
 export { default as AboutContent } from "./AboutContent";
+export { default as ServicesContent } from "./ServicesContent";

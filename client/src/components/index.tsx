@@ -3,3 +3,4 @@ export { default as Button } from "./Button";
 export { default as Post } from "./Post";
 export { default as DessertsPost } from "./DessertsPost";
 export { default as DrinksPost } from "./DrinksPost";
+export { default as PhoneMenu } from "./PhoneMenu";
