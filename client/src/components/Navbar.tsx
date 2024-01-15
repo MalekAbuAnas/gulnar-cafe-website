@@ -24,19 +24,19 @@ export default function Navbar() {
             <img src={Logo} alt="Logo" className="logo w-44" />
           </Link>
           <ul className="hidden md:flex space-x-12 text-white">
-            <li className="text-[#fff] capitalize">
+            <li className="text-[#fff] capitalize transition hover:border-b-[1px] border-[#fff]">
               <Link to={"/"}>home</Link>
             </li>
-            <li className="text-[#fff] capitalize">
+            <li className="text-[#fff] capitalize transition hover:border-b-[1px] border-[#fff]">
               <Link to={"/about"}>about</Link>
             </li>
-            <li className="text-[#fff] capitalize">
+            <li className="text-[#fff] capitalize transition hover:border-b-[1px] border-[#fff]">
               <Link to={"/services"}>Services</Link>
             </li>
-            <li className="text-[#fff] capitalize">
+            <li className="text-[#fff] capitalize transition hover:border-b-[1px] border-[#fff]">
               <Link to={"/menu"}>Menu</Link>
             </li>
-            <li className="text-[#fff] capitalize">
+            <li className="text-[#fff] capitalize transition hover:border-b-[1px] border-[#fff]">
               <Link to={"/contact"}>Contact US</Link>
             </li>
           </ul>

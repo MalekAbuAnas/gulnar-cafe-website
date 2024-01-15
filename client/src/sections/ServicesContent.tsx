@@ -3,9 +3,9 @@ import { Button } from "../components";
 export default function ServicesContent() {
   return (
     <div className="services-content">
-      <div className="cards-container container mx-auto py-10 flex flex-wrap gap-10 items-center justify-center">
+      <div className="cards-container container mx-auto py-10 flex flex-col md:flex-row flex-wrap gap-10 items-center justify-center">
         <div
-          className="card w-[30%] h-fit py-6 text-center min-h-96 bg-[#fff] rounded-3xl shadow-2xl"
+          className="card w-10/12 px-3 md:w-[30%] h-fit py-6 text-center min-h-96 bg-[#fff] rounded-3xl shadow-2xl"
           data-aos="flip-up"
         >
           <h1 className="font-yeseva text-4xl text-g-dark-brown">
@@ -18,7 +18,7 @@ export default function ServicesContent() {
           </div>
         </div>
         <div
-          className="card w-[30%] h-fit py-6 text-center min-h-96 bg-[#fff] rounded-3xl shadow-2xl"
+          className="card w-10/12 px-3 md:w-[30%] h-fit py-6 text-center min-h-96 bg-[#fff] rounded-3xl shadow-2xl"
           data-aos="flip-up"
         >
           <h1 className="font-yeseva text-4xl text-g-dark-brown">
@@ -29,7 +29,7 @@ export default function ServicesContent() {
           </div>
         </div>
         <div
-          className="card w-[30%] h-fit py-6 text-center min-h-96 bg-[#fff] rounded-3xl shadow-2xl"
+          className="card w-10/12 px-3 md:w-[30%] h-fit py-6 text-center min-h-96 bg-[#fff] rounded-3xl shadow-2xl"
           data-aos="flip-up"
         >
           <h1 className="font-yeseva text-4xl text-g-dark-brown">Wholesale</h1>

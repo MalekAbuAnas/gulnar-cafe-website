@@ -1,3 +1,10 @@
+import { ContactContent, PagesHero } from "../sections";
+
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <>
+      <PagesHero callToAction={false} title="Contact Us" subtitle="" />
+      <ContactContent />
+    </>
+  );
 }

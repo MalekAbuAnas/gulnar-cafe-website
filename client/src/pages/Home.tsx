@@ -2,11 +2,11 @@ import {
   About,
   ByForHome,
   FeaturedMenu,
-  Footer,
   Hero,
   Location,
-  PoweredBy,
   Reviews,
+  Footer,
+  LowerFooter
 } from "../sections/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -31,9 +31,7 @@ export default function Home() {
       <Location />
       <ByForHome />
       <Footer />
-      <br />
-      <br />
-      <PoweredBy />
+      <LowerFooter />
     </>
   );
 }
