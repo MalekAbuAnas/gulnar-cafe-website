@@ -3,30 +3,31 @@ import { Button } from ".";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 
-
-
-
-
 export default function ContactForm() {
-
     const form = useRef<HTMLFormElement>(null);
 
     const sendEmail = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_8x8sc2k', 'template_pkcrzbb', form.current, 'wT66Fu0fVGRCrU4ck')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        if (form.current) {
+            emailjs.sendForm('service_8x8sc2k', 'template_pkcrzbb', form.current, 'wT66Fu0fVGRCrU4ck')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+        }
+        alert("Your Message has sent successfully");
     };
 
     return (
-        <form className="w-full md:w-fit flex flex-col items-center justify-center space-y-10 px-5 md:px-0" onSubmit={() => {
-            sendEmail
-            alert("Your Message has sent successfully")
-        }} ref={form} action="POST" data-aos="fade-up">
+        <form
+            className="w-full md:w-fit flex flex-col items-center justify-center space-y-10 px-5 md:px-0"
+            onSubmit={sendEmail}
+            ref={form}
+            action="POST"
+            data-aos="fade-up"
+        >
             <div className="first-and-last w-full flex space-x-5 items-center justify-center">
                 <input type="text" placeholder="First Name" name="first_name" className="h-[50px] w-full border-b-[1px] border-g-dark-brown text-g-dark-brown placeholder:text-g-dark-brown" required />
                 <input type="text" placeholder="Last Name" name="last_name" className="h-[50px] w-full border-b-[1px] border-g-dark-brown text-g-dark-brown placeholder:text-g-dark-brown" required />
@@ -40,10 +41,8 @@ export default function ContactForm() {
                 <option value="suggestion">Suggestion</option>
                 <option value="order">Order</option>
             </select>
-            <textarea name="message" placeholder="Enter Your Message" className="min-h-[100px] w-full md:min-w-[500px] md:max-w-[500px] border-b-[1px] border-g-dark-brown placeholder:text-g-dark-brown">
-            </textarea>
+            <textarea name="message" placeholder="Enter Your Message" className="min-h-[100px] w-full md:min-w-[500px] md:max-w-[500px] border-b-[1px] border-g-dark-brown placeholder:text-g-dark-brown"></textarea>
             <Button first_text="Submit" second_text={<i className="fa-regular fa-paper-plane"></i>} link={""} fade={false} />
         </form>
-    )
+    );
 }
-{/* <input type="submit" className="self-center h-[50px] w-[500px] bg-none text-g-dark-brown border-b-[1px] border-g-dark-brown duration-500 hover:bg-g-dark-brown hover:text-[#fff] hover:border-[#fff] cursor-pointer" /> */ }
