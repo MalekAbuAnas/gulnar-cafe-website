@@ -23,7 +23,10 @@ export default function ContactForm() {
     };
 
     return (
-        <form className="w-full md:w-fit flex flex-col items-center justify-center space-y-10 px-5 md:px-0" onSubmit={sendEmail} ref={form} action="POST" data-aos="fade-up">
+        <form className="w-full md:w-fit flex flex-col items-center justify-center space-y-10 px-5 md:px-0" onSubmit={() => {
+            sendEmail
+            alert("Your Message has sent successfully")
+        }} ref={form} action="POST" data-aos="fade-up">
             <div className="first-and-last w-full flex space-x-5 items-center justify-center">
                 <input type="text" placeholder="First Name" name="first_name" className="h-[50px] w-full border-b-[1px] border-g-dark-brown text-g-dark-brown placeholder:text-g-dark-brown" required />
                 <input type="text" placeholder="Last Name" name="last_name" className="h-[50px] w-full border-b-[1px] border-g-dark-brown text-g-dark-brown placeholder:text-g-dark-brown" required />
