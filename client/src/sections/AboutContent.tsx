@@ -1,4 +1,5 @@
 import { CoffeeCup } from "../assets";
+import { Separator } from "../components";
 
 export default function AboutContent() {
   return (
@@ -44,6 +45,8 @@ export default function AboutContent() {
           </p>
         </div>
       </div>
+      <Separator />
+      <Separator />
       <div className="about-content-02 py-16 flex flex-col text-center items-center justify-center space-y-10 border-t-[1px] border-g-dark-brown md:border-t-[0px]">
         <h1
           className="font-yeseva text-5xl md:text-7xl text-g-dark-brown text-center md:text-left w-10/12 md:w-3/5 md:ms-20"

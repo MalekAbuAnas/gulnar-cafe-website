@@ -121,7 +121,7 @@ export default function FeaturedMenu() {
               <Button
                 first_text="View Full Menu"
                 second_text="Let's Go"
-                link={"#"}
+                link={"/menu"}
                 fade={true}
               ></Button>
             </div>

@@ -44,3 +44,4 @@ export { default as Page13 } from "./menu/13.jpg";
 export { default as Page14 } from "./menu/14.jpg";
 export { default as Page15 } from "./menu/15.jpg";
 export { default as Page16 } from "./menu/16.jpg";
+export { default as MenuPDF } from "./menu/menu 2.pdf";

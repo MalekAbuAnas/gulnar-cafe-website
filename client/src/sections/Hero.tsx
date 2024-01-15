@@ -36,7 +36,7 @@ export default function Hero({
           <Button
             first_text={btn_frst_text}
             second_text={btn_second_text}
-            link="#"
+            link="/menu"
             fade={true}
           ></Button>
           {/* <button className="Button mt-6">

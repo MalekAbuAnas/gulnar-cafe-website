@@ -40,7 +40,7 @@ export default function About() {
             second_text={
               <i className="fa-solid fa-arrow-right-long text-2xl"></i>
             }
-            link={""}
+            link={"/about"}
             fade={true}
           ></Button>
         </div>

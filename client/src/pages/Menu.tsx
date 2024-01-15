@@ -1,5 +1,6 @@
 import { MenuSlider } from "../components";
 import { Footer, LowerFooter, PagesHero } from "../sections";
+import { MenuPDF } from "../assets";
 
 export default function Menu() {
   return (
@@ -10,7 +11,7 @@ export default function Menu() {
         callToAction={true}
         first_text="Download Menu"
         second_text="PDF Menu"
-        link="#"
+        link={MenuPDF}
         fade={true}
       />
       <MenuSlider />

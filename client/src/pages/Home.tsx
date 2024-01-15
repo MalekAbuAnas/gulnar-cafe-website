@@ -11,6 +11,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Separator } from "../components";
 
 export default function Home() {
   useEffect(() => {
@@ -26,10 +27,13 @@ export default function Home() {
         btn_second_text="To The Menu"
       />
       <About />
+      <Separator />
       <FeaturedMenu />
       <Reviews />
+      <Separator />
       <Location />
       <ByForHome />
+      <Separator />
       <Footer />
       <LowerFooter />
     </>
